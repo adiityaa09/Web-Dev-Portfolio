@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+   
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #001427;
+  color: #333;
+ 
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: #708d81;
+  color: #fff;
+  position: sticky;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  height:200px;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  animation: fadeInLeft 1s ease;
+  display:flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+nav a {
+ display:flex;
+ justify-content:space-between;
+  color: #fff;
+  transition: color 0.3s, transform 0.2s;
+  flex-direction: column;
+   align-items: center;
+}
+
+nav a:hover {
+  color: #ffdd57;
+  transform: translateY(-2px);
+}
+
+
+ section {
+  max-width: 900px; 
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  animation: fadeUp 0.8s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+section h2, section h3, section h4 {
+  color: #004aad;
+  margin-bottom: 1rem;
+ 
+  border-left: 4px solid #004aad;
+  padding-left: 0.5rem;
+}
+
+ul li {
+  padding: 0.4px;
+  font-size: 1rem;
+  position: relative;
+}
+
+#contact a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: #ff8800;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f5f5f5;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#Aboutme{
+    background-color: #f4d58d;
+   
+}
+#skills{
+    background-color: #a3a380
+}
+#projects{
+    background-color: #efebce;
+}
+#education{
+    background-color: #d8a48f;
+}
+#contact{
+    background-color: #d5bdaf;
+}
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+      }
+
+      nav div {
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      section {
+        padding: 1.5rem;
+        margin: 1.5rem 1rem;
+      }
+
+      section h2,
+      section h3,
+      section h4 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav h1 {
+        font-size: 1.2rem;
+      }
+
+      nav div {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      section {
+        padding: 1rem;
+      }
+
+      ul li {
+        font-size: 0.9rem;
+      }
+    }
+
+</style>
+</head>
+<body>
+    <nav>
+<h1>Aditya Pawar</h1>
+
+   <a href="#Aboutme">About</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+
+</nav>
+<main>
+    <section id="Aboutme">
+    <h2>About Me</h2>
+    <p>Hi, I’m <b>Aditya Pawar</b> — an <i>undergraduate student</i> at <b><i>Scaler School of Technology.</i></b> 
+    I’m passionate about building strong foundations in software development and exploring how technology can be applied to solve real-world problems.
+    Currently, I’m sharpening my skills in programming, problem-solving, and modern tech stacks while working on hands-on projects.
+    I’m eager to grow as a developer and contribute to impactful, innovative solutions.
+</p>
+</section>
+<section id="skills">
+    <h3>Skills</h3>
+    <ul>
+        <li>Languages:Java,Javascript</li>
+        <li>Web:HTML,CSS</li>
+        <li>Tools:Git,VS code</li>
+        
+    </ul>
+</section>
+<section id="projects">
+  <h3 id="projects-heading">Projects</h3>
+  <p>
+    I am currently working on developing projects to strengthen my practical skills.
+    This section will soon showcase applications and solutions I build as part of my journey.
+  </p>
+</section>
+<section id="education">
+    <h4>Education</h4>
+     <p>Scaler School of Technology — Undergraduate</p>
+</section>
+<section id="contact">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Email: <a href="https://mail.google.com/">adipawarm@gmail.com</a></p>
+      <p>LinkedIn / GitHub: <a href="https://www.linkedin.com/in/aditya-pawar-6a537b376?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BO26z72b%2BRG24KadytZKEsg%3D%3D">LinkedIn</a> | <a href="https://github.com/adiityaa09">GitHub</a></p>
+</section>
+</main>
+<footer>
+    <p>© 2025 Aditya Pawar</p>
+  </footer>
+   
+</body>
+</html>
